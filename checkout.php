@@ -161,7 +161,7 @@ if(isset($_POST['order'])){
          </div>
          <div class="inputBox">
             <span>ZIP CODE :</span>
-            <input type="number" min="0" name="pin_code" placeholder="e.g. 56400" min="0" max="999999" onkeypress="if(this.value.length == 6) return false;" class="box" required>
+            <input type="number" min="0" name="pin_code" placeholder="Zip code" min="0" max="999999" onkeypress="if(this.value.length == 6) return false;" class="box" required>
             <div class="error"></div>
 
          </div>
@@ -177,7 +177,7 @@ if(isset($_POST['order'])){
 </section>
 
 
-
+  
 
 
 
