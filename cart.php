@@ -60,7 +60,7 @@ if(isset($_POST['update_qty'])){
    <div class="box-container">
 
    <?php
-      $grand_total = 0;
+      $grnd_total = 0;
       $select_cart = $conn->prepare("SELECT * FROM `cart` WHERE user_id = ?");
       $select_cart->execute([$user_id]);
       if($select_cart->rowCount() > 0){
@@ -89,7 +89,7 @@ if(isset($_POST['update_qty'])){
    </div>
 
    <div class="cart-total">
-      <p>Grand Total : <span>Nrs.<?= $grand_total; ?>/-</span></p>
+      <p>Grand Total : <span>ETB.<?= $grand_total; ?>/-</span></p>
       <a href="shop.php" class="option-btn">Continue Shopping.</a>
       <a href="cart.php?delete_all" class="delete-btn <?= ($grand_total > 1)?'':'disabled'; ?>" onclick="return confirm('delete all from cart?');">Delete All Items ?</a>
       <a href="checkout.php" class="btn <?= ($grand_total > 1)?'':'disabled'; ?>">Proceed to Checkout.</a>

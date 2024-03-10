@@ -63,7 +63,7 @@ include 'components/wishlist_cart.php';
          <div class="content">
             <div class="name"><?= $fetch_product['name']; ?></div>
             <div class="flex">
-               <div class="price"><span>Nrs.</span><?= $fetch_product['price']; ?><span>/-</span></div>
+               <div class="price"><span>ETB.</span><?= $fetch_product['price']; ?><span>/-</span></div>
                <input type="number" name="qty" class="qty" min="1" max="99" onkeypress="if(this.value.length == 2) return false;" value="1">
             </div>
             <div class="details"><?= $fetch_product['details']; ?></div>

@@ -93,7 +93,7 @@ if(isset($_POST['order'])){
       ?>
          <input type="hidden" name="total_products" value="<?= $total_products; ?>">
          <input type="hidden" name="total_price" value="<?= $grand_total; ?>" value="">
-         <div class="total">Total : <span>ETB.<?= $grand_total; ?>/-</span></div>
+         <div class="grand_total">Total : <span>ETB.<?= $grand_total; ?>/-</span></div>
       </div>
 
       <h3>place your orders</h3>
@@ -134,6 +134,7 @@ if(isset($_POST['order'])){
          <div class="inputBox">
             <span>Address line 01 :</span>
             <input type="text" name="flat" placeholder="Address line 1" class="box" maxlength="50" required>
+
          </div>
          <div class="inputBox">
             <span>Address line 02 :</span>
@@ -153,8 +154,10 @@ if(isset($_POST['order'])){
             <div class="error"></div>
 
          </div>
+
+         <!--you can add country list in sql Db i will add thes in next commit-->
          <div class="inputBox">
-            <span>Country :</span>
+           <!--   Eg--> <span>Country :</span>
             <input type="text" name="country" placeholder="Ethiopia" class="box" maxlength="50" required>
             <div class="error"></div>
 
