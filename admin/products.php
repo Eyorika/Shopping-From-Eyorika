@@ -127,6 +127,15 @@ if(isset($_GET['delete'])){
             <span>Image 03 (required)</span>
             <input type="file" name="image_03" accept="image/jpg, image/jpeg, image/png, image/webp" class="box" required>
         </div>
+        <!--test category-->
+        <div class="inputBox">
+            <span>Image 03 (required)</span>
+            <input type="text" name="category" class="box" required>
+            <?php
+            if(isset($_GET['catagory_tbl'])){ }
+            ?>
+        </div>
+        <!--end-->
          <div class="inputBox">
             <span>Product description (required)</span>
             <textarea name="details" placeholder="enter product details" class="box" required maxlength="500" cols="30" rows="10"></textarea>
