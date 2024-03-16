@@ -67,12 +67,13 @@
    document.body.classList.add('light-mode');
 </script>
 
- <span class="header-small" id="header-small"></span>
+ 
 
    <section class="flex">
+   <span class="header-small" id="header-small"></span>
 <a href="home.php" class="navbar-brand">E.A.T Commerce
 
-</a>
+</a> 
  <!--text effect   -->
  <script>
       const headerLines = [
@@ -105,7 +106,7 @@
 
    <!--Text typing effect-->
    
-
+  
       <nav class="navbar">
          <a href="home.php">Home</a>
          <a href="about.php">About Us</a>
