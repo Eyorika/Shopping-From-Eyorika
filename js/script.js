@@ -25,3 +25,7 @@ subImages.forEach(images =>{
       mainImage.src = src;
    }
 });
+/*
+setTimeout(function(){
+   $('.pre-loader').fadeOut(300);
+ }, time);*/

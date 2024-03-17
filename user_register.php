@@ -54,9 +54,22 @@ if(isset($_POST['submit'])){
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css">
-
+<link rel="stylesheet" href="stl-nignt.css">
 </head>
 <body>
+
+<div class="pre-loader">
+		<div class="pre-loader-box">
+			<div class="loader-logo"><img src="../vendors/images/deskapp-logo-svg.png" alt=""></div>
+			<div class='loader-progress' id="progress_div">
+				<div class='bar' id='bar1'></div>
+			</div>
+			<div class='percent' id='percent1'>0%</div>
+			<div class="loading-text">
+				Loading InspireTech ...
+			</div>
+		</div>
+	</div>
    
 <?php include 'components/user_header.php'; ?>
 
